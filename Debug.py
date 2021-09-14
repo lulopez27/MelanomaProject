@@ -107,7 +107,7 @@ def findsymmetry(im):
     y_line = int(mean(y))
     yassymetry = 0
     for x in range(len(xmina)):
-        yassymetry += abs(abs(abs(ymaxa[x]-y_line)-abs(ymina[x]-y_line))
+        yassymetry += abs(abs(ymaxa[x]-y_line)-abs(ymina[x]-y_line))
     return [yassymetry,xassymetry]
 def findmiddle(line,max_):
     #return the halfway point between the first and last white pixel in a line, if there's no
